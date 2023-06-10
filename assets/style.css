@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary:#0967F7;
+    --secondary: #BBFFFF;
+    --tertiary: #1A00FB;
+    --dark: #000000;
+    --medium: #CACACC;
+    --light: #F9FEFF;
+}
+
+.hero-banner {
+    background-image: url("../assets/images/main-background.png"), linear-gradient(27deg, var(--secondary) 0%, var(--medium) 100%);
+    background-blend-mode: soft-light;
+    /* background-color: var(--medium); */
+    height: 29vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    /* background-blend-mode: soft-light; */
+ 
+ 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    line-height: 1.8;
+
+}
+
+header {
+
+    background-image: url("../assets/images/00177.png");
+    background-color: var(--medium);
+    height: 10vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+header img {
+    border-radius: 25%;
+    width: 100px;
+
+}
+}
+
+header h1 {
+    width: 100%;
+
+}
+
+section figure img {
+    margin: 0;
+    max-height: 512px;
+    max-width: 512px;
+}
