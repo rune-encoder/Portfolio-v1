@@ -47,7 +47,7 @@ h1 {
     background-repeat: no-repeat;
     filter:saturate(250%);
     /*Text Style - Title and Logo*/
-    color: var(--medium);
+    color: var(--secondary);
     font-variant: small-caps;
     font-style: oblique;
     font-weight: 500;
@@ -62,8 +62,6 @@ nav {
     /*Block Dimensions - Navagation Bar*/
     margin: 5px 10px 0 20px;
     position: relative;
-    top: 35px;
-
 }
 
 /*Header Navagation Bar: Links*/
@@ -114,7 +112,7 @@ nav a:hover {
     /*Border Style - Main Container and Background*/
     border: 5px var(--dark) solid;
     /*Block Dimensions - Main Container and Background*/
-    height: 40vh;
+    height: 61vh;
     /*Display Behavior - Main Container and Background*/
     display: flex;
     justify-content: space-between;
@@ -353,7 +351,7 @@ hgroup p {
     
     /*Header & Contents Within Section: Adjustments to Viewport*/
     header {
-        height: 20rem;
+        height: 18rem;
         display: block;
         text-align: center;
     }
