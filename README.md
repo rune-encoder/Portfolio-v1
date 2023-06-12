@@ -4,7 +4,7 @@
 
 This is a portfolio made with love, sweat, and tears from yours truly.
 
-This webpage was built to be an online portfolio to showcase my personal coding projects. It's purpose is to help potential employers or businesses get to know more about me.
+This webpage was built to be an online portfolio to showcase my personal coding projects. Its purpose is to help potential employers or businesses get to know more about me.
 
 ## Installation
 
