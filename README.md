@@ -12,7 +12,7 @@ N/A
 
 ## Usage
 
-Navagate to the Webpage using the following link: https://rune-encoder.github.io/
+Navagate to the Webpage using the following link: https://rune-encoder.github.io/Portfolio/
 
 The homepage is divided into different sections.
 
