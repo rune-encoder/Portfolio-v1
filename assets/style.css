@@ -112,7 +112,8 @@ nav a:hover {
     /*Border Style - Main Container and Background*/
     border: 5px var(--dark) solid;
     /*Block Dimensions - Main Container and Background*/
-    height: 61vh;
+    width: 100%;
+    height: auto;
     /*Display Behavior - Main Container and Background*/
     display: flex;
     justify-content: space-between;
@@ -125,8 +126,11 @@ section figure img {
     filter: drop-shadow(30px 30px 15px #9206e2);
     filter: grayscale(50%) sepia(75%);
     /*Block Dimensions - Profile Photo*/
-    margin: 0 1rem 0 0;
-    max-height: 512px;
+    margin: 0 5px 0 0;
+    max-height: 430px;
+    min-height: 230px;
+    max-width: 100%;
+    min-width: 180px;
 }
 
 /*Main Section: Basic Summary */
@@ -146,7 +150,7 @@ hgroup {
     margin: 2rem 0 2rem 1rem;
     padding: 5rem;
     /*Display Size - Summary*/
-    flex: 0 1 50%;
+    flex: 0 0 40%;
 }
 
 hgroup h2,
@@ -378,6 +382,15 @@ hgroup p {
         width: 90%;
     }
     /*!!!End of Header Section: Adjustment!!!*/
+
+    .hero-banner {
+        display: block
+    }
+
+    hgroup {
+        padding: 1px 0 2px 0;
+        border-radius: 20px 0 0 20px;
+    }
 
     /*Re-sizing Resources Headers and Containers*/
     .resources h2,
