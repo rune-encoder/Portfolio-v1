@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary:#0967F7;
+    --primary:#4385e9;
     --secondary: #BBFFFF;
     --tertiary: #1A00FB;
     --dark: #000000;
@@ -16,7 +16,7 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--dark);
-    background-color: var(--medium);
+    background: linear-gradient(175deg, var(--medium) 0%, var(--light) 100%);
 }
 
 /*Header Container: Contains: Title and Navagation Bar*/
@@ -45,33 +45,63 @@ h1 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    filter:saturate(250%);
     /*Text Style - Title and Logo*/
-    color: var(--tertiary);
+    color: var(--medium);
     font-variant: small-caps;
     font-style: oblique;
     font-weight: 500;
     line-height: 1.8;
     /*Block Dimensions - Title and Logo*/
-    margin-left: 0;
+    margin: 0 0 10px;
     padding: 3vh 0;
 }
 
 /*Header: Navagation Bar*/
 nav {
     /*Block Dimensions - Navagation Bar*/
-    margin-top: 57px;
-    margin-right: 10px;
+    margin: 5px 10px 0 20px;
+    position: relative;
+    top: 35px;
+
 }
 
 /*Header Navagation Bar: Links*/
 nav a {
     /*Text Style - Nav Individual Links*/
-    color: var(--light);
+    color: var(--medium);
     font-size: 1.3rem;
     text-decoration: none;
+    line-height: 1.8;
     /*Block Dimensions - Nav Individual Links*/
     padding: 5px 10px;
+    margin: 10px 1px;
+    /*Display Position - Nav Individual Links*/
+    position: relative;
+    /*Border and Outline Style - Nav Individual Links*/
+    outline: 1px solid;
+    outline-color: var(--light);
+    outline-offset: 0px;
+    /*Mouse Hover Effect Transition - Nav Individual Links*/
+    transition: all 0.3s ease;
 }
+
+/*Mouse Hover Effect - Navigation Bar: Links*/
+nav a:hover {
+    /*Background Style - After Hover: Nav Links*/
+    background-image: url(./images/00178.png), linear-gradient(27deg, var(--secondary) 0%, var(--medium) 100%);
+    background-blend-mode: overlay;
+    /*Border and Outline Style - After Hover: Nav Links*/
+    border: 0.1px solid var(--secondary);
+    outline-color: var(--light);
+    outline-offset: 17px;
+    /*Box Dimension - After Hover: Nav Links*/
+    margin: 17px;
+    /*Text Style - After Hover: Nav Links*/
+    color: var(--light);
+    text-shadow: 2px 2px 2px var(--tertiary); 
+}
+
 /*!!!End of Header Section!!!*/
 
 /*Main Section Container: Contains Background, Profile Photo, Basic Summary*/
@@ -100,7 +130,7 @@ section figure img {
     filter: drop-shadow(30px 30px 15px #9206e2);
     filter: grayscale(50%) sepia(75%);
     /*Block Dimensions - Profile Photo*/
-    margin: 0;
+    margin: 0 5rem 0 0;
     max-height: 512px;
 }
 
@@ -108,15 +138,25 @@ section figure img {
 hgroup {
     /*Background Style - Summary*/
     background-color: var(--medium);
-    clip-path: polygon(50% 0%, 100% 51%, 50% 100%, 0 50%);
+    box-shadow: inset 0px 0px 100px 10px var(--dark);
+    filter: drop-shadow(0px 0px 20px var(--secondary));
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0 50%); */
     /*Text Style - Summary*/
-    color: var(--dark);
+    color: var(--primary);
     font-size: 110%;
+    text-align: center;
     /*Block Dimensions - Summary*/
-    margin: 7rem 3rem 0 7rem;
-    padding: 7rem 8rem;
+    margin: 2rem 15rem 2rem 1rem;
+    padding: 8rem 5rem;
     /*Display Size - Summary*/
-    flex: 0 0 50%;
+    flex: 0 0 35%;
+}
+
+hgroup h2,
+hgroup span,
+hgroup p {
+    margin: 1.5rem;
+    box-shadow: 0px 15px 8px -7px var(--secondary);
 }
 /*!!!End of Main Section!!!*/
 
@@ -136,7 +176,7 @@ hgroup {
     /*Background Style - Resources Headings*/
     box-shadow: -10px 0px 8px -3px var(--secondary);
     /*Text Style - Resources Headings*/
-    color: var(--tertiary);
+    color: var(--primary);
     font-size: 3.0vw;
     text-align: left;
     /*Block Dimensions - Resources Headings*/
@@ -179,7 +219,6 @@ hgroup {
     /*Background Style - Individual Project Cards*/
     background-size: 100%;
     background-repeat: no-repeat;
-    background-blend-mode: hard-light;
     /*Text Style - Individual Project Cards*/
     text-decoration: none;
     color: var(--light);
@@ -193,12 +232,34 @@ hgroup {
     /*Display Behavior Inside Cards - Individual Project Cards*/
     display: flex;
     align-items: flex-end;
+    /*Display Position - Individual Project Cards*/
+    position: relative;
+    /*Border and Outline Style - Individual Project Cards*/
+    outline: 1px solid;
+    outline-color: var(--light);
+    outline-offset: 0px;
+    /*Mouse Hover Effect Transition - Individual Project Cards*/
+    transition: all 0.5s ease;
 }
 
 /*First/Main Project Card - Dimension and Size*/
 .cards:first-child {
     min-height: 450px;
     flex-basis: 95%;
+}
+
+.cards:hover {
+    /*Background Style - After Hover: Project Cards*/
+    background-repeat: no-repeat;
+    background-size: 130%;
+    filter: contrast(140%);
+    /*Border and Outline Style - After Hover: Project Cards*/
+    box-shadow: inset 0px 0px 100px 10px var(--dark);
+    border: 0.5px solid var(--light);
+    outline-color: var(--secondary);
+    outline-offset: 10px;
+    /*Outline Offset Overlap*/
+    z-index: 1;
 }
 
 /*Project Cards - Headers (Headers Within Cards)*/
@@ -250,14 +311,37 @@ hgroup {
   
 #contactme a {
     /*Text Style - Contact Me: Links*/
-    color: var(--tertiary);
+    color: var(--medium);
     text-decoration: none;
     font-size: 1.5em;
     font-style: normal;
+    line-height: 1.2;
     /*Blocks Dimensions and Position - Contact Me: Links*/
     padding: 1.1%;
     /*Display Behavior - Contact Me: Links*/
     display: flex;
     flex-wrap: wrap;
-    /*Background Style - Contact Me: Links*/
-  }
+    /*Display Position - Contact Me: Links*/
+    position: relative;
+    /*Border and Outline Style - Contact Me: Links*/
+    outline: 1px solid;
+    outline-color: var(--light);
+    outline-offset: 0px;
+    /*Mouse Hover Effect Transition - Contact Me: Links*/
+    transition: all 0.3s ease;
+}
+
+#contactme a:hover {
+    /*Background Style - After Hover: Contact Me Links*/
+    background-image: url(./images/00178.png), linear-gradient(27deg, var(--secondary) 0%, var(--medium) 100%);
+    background-blend-mode: color-burn;
+    /*Border and Outline Style - After Hover: Contact Me Links*/
+    border: 0.1px solid var(--tertiary);
+    outline-color: var(--primary);
+    outline-offset: 17px;
+    /*Box Dimension - After Hover: Contact Me Links*/
+    margin: 17px;
+    /*Text Style - After Hover: Contact Me Links*/
+    color: var(--light);
+    text-shadow: 2px 2px 2px var(--medium); 
+}
