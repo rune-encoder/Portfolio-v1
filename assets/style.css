@@ -142,6 +142,7 @@ hgroup {
     /*Text Style - Summary*/
     color: var(--primary);
     font-size: 110%;
+    font-variant: small-caps;
     text-align: center;
     /*Block Dimensions - Summary*/
     margin: 2rem 0 2rem 1rem;
@@ -151,7 +152,6 @@ hgroup {
 }
 
 hgroup h2,
-hgroup span,
 hgroup p {
     margin: 1.5rem;
     box-shadow: 0px 15px 8px -9px var(--dark);
@@ -359,6 +359,7 @@ hgroup p {
     }
   
     header h1 {
+        color: var(--light);
         font-size: 2.5rem;
         margin: 0;
         padding: 0.5rem;   
