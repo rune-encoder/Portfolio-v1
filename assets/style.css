@@ -99,9 +99,8 @@ nav a:hover {
     margin: 17px;
     /*Text Style - After Hover: Nav Links*/
     color: var(--light);
-    text-shadow: 2px 2px 2px var(--tertiary); 
+    text-shadow: 2px 2px 2px var(--dark); 
 }
-
 /*!!!End of Header Section!!!*/
 
 /*Main Section Container: Contains Background, Profile Photo, Basic Summary*/
@@ -109,15 +108,13 @@ nav a:hover {
     /*Background Image and Style - Main Container and Background*/
     background-image: url("../assets/images/main-background.png"), linear-gradient(27deg, var(--secondary) 0%, var(--medium) 100%);
     background-blend-mode: multiply;
-    background-color: var(--medium);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /*Border Style - Main Container and Background*/
-    border: 0.5vh var(--dark) solid;
+    border: 5px var(--dark) solid;
     /*Block Dimensions - Main Container and Background*/
-    height: 50vh;
-    padding: 0;
+    height: 40vh;
     /*Display Behavior - Main Container and Background*/
     display: flex;
     justify-content: space-between;
@@ -130,33 +127,34 @@ section figure img {
     filter: drop-shadow(30px 30px 15px #9206e2);
     filter: grayscale(50%) sepia(75%);
     /*Block Dimensions - Profile Photo*/
-    margin: 0 5rem 0 0;
+    margin: 0 1rem 0 0;
     max-height: 512px;
 }
 
 /*Main Section: Basic Summary */
 hgroup {
     /*Background Style - Summary*/
-    background-color: var(--medium);
-    box-shadow: inset 0px 0px 100px 10px var(--dark);
+    background-color: var(--light);
+    box-shadow: inset 65px 0px 100px -50px var(--dark);
     filter: drop-shadow(0px 0px 20px var(--secondary));
-    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0 50%); */
+    border-radius: 50px 0 0 50px;
+    filter: opacity(95%);
     /*Text Style - Summary*/
     color: var(--primary);
     font-size: 110%;
     text-align: center;
     /*Block Dimensions - Summary*/
-    margin: 2rem 15rem 2rem 1rem;
-    padding: 8rem 5rem;
+    margin: 2rem 0 2rem 1rem;
+    padding: 5rem;
     /*Display Size - Summary*/
-    flex: 0 0 35%;
+    flex: 0 1 50%;
 }
 
 hgroup h2,
 hgroup span,
 hgroup p {
     margin: 1.5rem;
-    box-shadow: 0px 15px 8px -7px var(--secondary);
+    box-shadow: 0px 15px 8px -9px var(--dark);
 }
 /*!!!End of Main Section!!!*/
 
@@ -217,7 +215,7 @@ hgroup p {
     border-top: 5px solid var(--primary); 
     border-left: 10px solid var(--secondary); 
     /*Background Style - Individual Project Cards*/
-    background-size: 100%;
+    background-size: 125%;
     background-repeat: no-repeat;
     /*Text Style - Individual Project Cards*/
     text-decoration: none;
@@ -225,8 +223,9 @@ hgroup p {
     font-variant: small-caps;
     font-size: 1.1em;
     /*Cards Height - Individual Project Cards*/
-    height: 20em;
-    flex-basis: 48%;
+    /* min-height: 10em; */
+    min-height: 15em;
+    flex-basis: 47%;
     /*Block Dimensions - Individual Project Cards*/
     margin: 0.5rem;
     /*Display Behavior Inside Cards - Individual Project Cards*/
@@ -248,10 +247,11 @@ hgroup p {
     flex-basis: 95%;
 }
 
+/*Mouse Hover Effect - Project Cards: Links*/
 .cards:hover {
     /*Background Style - After Hover: Project Cards*/
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 135%;
     filter: contrast(140%);
     /*Border and Outline Style - After Hover: Project Cards*/
     box-shadow: inset 0px 0px 100px 10px var(--dark);
@@ -267,6 +267,7 @@ hgroup p {
     /*Background Style - Cards Headers*/
     background-color: var(--medium);
     color: var(--primary);
+    filter: opacity(90%);
     /*Blocks Dimensions and Position - Cards Headers*/
     margin-bottom: 10px;
     padding-left: 10px;
@@ -294,9 +295,9 @@ hgroup p {
     background-image: url(./images/00180.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
 }
 /* End of Portfolio Project Images*/
-/*!!!End Work Section!!!*/
+/*!!!End of Work Section!!!*/
 
-/*Contact Me Section: Contains Address Links*/
+/*Contact Me Section Container: Contains Address Links*/
 #contactme address {
     /*Display Behavior - Contact Me Container*/
     display: flex;
@@ -304,11 +305,9 @@ hgroup p {
     align-items: center;
     /*Display Size - Contact Me Container*/
     height: 100%;
-
-
-    /* flex-flow: row wrap; */
   }
   
+/*Contact Me Individual Links*/
 #contactme a {
     /*Text Style - Contact Me: Links*/
     color: var(--medium);
@@ -331,6 +330,7 @@ hgroup p {
     transition: all 0.3s ease;
 }
 
+/*Mouse Hover Effect - Contact Me: Links*/
 #contactme a:hover {
     /*Background Style - After Hover: Contact Me Links*/
     background-image: url(./images/00178.png), linear-gradient(27deg, var(--secondary) 0%, var(--medium) 100%);
@@ -339,9 +339,101 @@ hgroup p {
     border: 0.1px solid var(--tertiary);
     outline-color: var(--primary);
     outline-offset: 17px;
+    z-index: 1;
     /*Box Dimension - After Hover: Contact Me Links*/
     margin: 17px;
     /*Text Style - After Hover: Contact Me Links*/
     color: var(--light);
     text-shadow: 2px 2px 2px var(--medium); 
 }
+/*!!!End of Contact Me Section!!!*/
+
+/*Adaptive Layout to Viewport at 992px*/
+@media screen and (max-width: 992px) {
+    
+    /*Header & Contents Within Section: Adjustments to Viewport*/
+    header {
+        height: 20rem;
+        display: block;
+        text-align: center;
+    }
+  
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0.5rem;   
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        flex-basis: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 0;
+        margin: 1px;
+        width: 90%;
+    }
+    /*!!!End of Header Section: Adjustment!!!*/
+
+    /*Re-sizing Resources Headers and Containers*/
+    .resources h2,
+    .resources div {
+        flex-basis: 100%;
+    }
+  
+    .resources h2 {
+        box-shadow: 0px 15px 8px -7px var(--secondary);
+        border-bottom: 4px solid var(--primary);
+        margin: 0 0 2.5rem 0;
+        padding: 0 0 0.5rem 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+    /*!!!End of Resources Section: Resizing and Adjustment!!!*/
+
+    /*Contact Me & Contents Within Section: Display Adjustments*/
+    #contactme div {
+        margin: 20px 0 50px;
+    }
+
+    #contactme address {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #contactme a {
+        flex: 0 0 45%;
+    }
+    /*!!!End of Contact Me Section: Display Adjustments!!!*/
+}
+/*!!!End of Section: Adaptive Layout to Viewport at 992px!!!*/
+
+/*Adaptive Layout to Viewport at 768px*/
+  @media screen and (max-width: 768px) {
+
+    /*Project Cards: Stretch to fit content*/
+    .cards,
+    .cards:first-child {
+        flex-basis: 100%;
+    }
+  
+    .cards:first-child {
+        min-height: 15em;
+    }
+  
+    /*Contact Me & Contents Within Section: Display Adjustments*/
+    #contactme address {
+        display: block;
+    }
+
+    #contactme address a {
+        width: 93%;
+        text-align: center;
+    }
+}
+/*!!!End of Section: Adaptive Layout to Viewport at 768px!!!*/
