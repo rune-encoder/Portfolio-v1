@@ -278,23 +278,32 @@ hgroup p {
 
 /* Portfolio Project Images*/
 #card1 {
-    background-image: url(./images/Shot-Horiseon.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+    background-image: url(./images/Work-Screenshots/Shot-Vroomu.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+    background-size: cover;
 }
 
 #card2 {
-    background-image: url(./images/Shot-PreWork.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+    background-image: url(./images/Work-Screenshots/Shot-Weather-Dashboard.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
 }
 
 #card3 {
-    background-image: url(./images/Shot-AiArt.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+    background-image: url(./images/Work-Screenshots/Shot-Work-Day\ Scheduler.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
 }
 
 #card4 {
-    background-image: url(./images/00180.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+    background-image: url(./images/Work-Screenshots/Shot-Code-Quiz.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
 }
 
 #card5 {
-    background-image: url(./images/00180.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+    background-image: url(./images/Work-Screenshots/Shot-Password-Generator.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card6 {
+    background-image: url(./images/Work-Screenshots/Shot-Horiseon.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card7 {
+    background-image: url(./images/Work-Screenshots/Shot-PreWork.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
 }
 /* End of Portfolio Project Images*/
 /*!!!End of Work Section!!!*/
