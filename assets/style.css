@@ -305,6 +305,35 @@ hgroup p {
 #card7 {
     background-image: url(./images/Work-Screenshots/Shot-PreWork.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
 }
+
+#card14 {
+    background-image: url(./images/Work-Screenshots/Readme-Generator.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card13 {
+    background-image: url(./images/Work-Screenshots/note-logger.gif), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card12 {
+    background-image: url(./images/Work-Screenshots/Shot-SVG-Logo.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card11 {
+    background-image: url(./images/Work-Screenshots/Shot-employee-tracker.gif), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card10 {
+    background-image: url(./images/Work-Screenshots/E-Commerce-Screenshot.gif), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card9 {
+    background-image: url(./images/Work-Screenshots/Tech-Blog.gif), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
+#card8 {
+    background-image: url(./images/Work-Screenshots/UnityBiz.png), linear-gradient(175deg, var(--light) 0%, var(--primary) 100%);
+}
+
 /* End of Portfolio Project Images*/
 /*!!!End of Work Section!!!*/
 
